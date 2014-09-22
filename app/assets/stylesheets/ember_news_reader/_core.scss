@@ -1,0 +1,13 @@
+// setup theme configs and styles
+@import "config";
+@import "primitives";
+
+// extend the archetype theme
+@import "archetype";
+//@import "../archetype/core";
+
+// import helper functions
+@import "helpers";
+
+// finally initialize our custom components
+@import "components";
