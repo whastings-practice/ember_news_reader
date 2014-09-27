@@ -21,5 +21,3 @@
 
 // for more details see: http://emberjs.com/guides/application/
 window.NewsReader = Ember.Application.create();
-
-//= require_tree .

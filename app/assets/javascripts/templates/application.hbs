@@ -2,9 +2,13 @@
   <div class="sidebar-main">
     <ul>
       {{#each}}
-        <li>{{title}}</li>
+        <li>
+          {{#link-to 'feed' this}}{{title}}{{/link-to}}
+        </li>
       {{/each}}
     </ul>
   </div>
-  <div class="content-main"></div>
+  <div class="content-main">
+    {{outlet}}
+  </div>
 </div>
