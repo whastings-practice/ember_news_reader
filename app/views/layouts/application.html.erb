@@ -10,5 +10,8 @@
 
 <%= yield %>
 
+<% [:application].each do |template| %>
+  <%= javascript_include_tag "templates/#{template}" %>
+<% end %>
 </body>
 </html>
