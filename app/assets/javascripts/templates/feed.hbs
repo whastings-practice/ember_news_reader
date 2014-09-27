@@ -1,3 +1,10 @@
 <div class="feed-show">
   <h1>You are reading {{title}}</h1>
+  <div class="feed-entries">
+    <ul>
+      {{#each entries}}
+        <li>{{title}}</li>
+      {{/each}}
+    </ul>
+  </div>
 </div>
