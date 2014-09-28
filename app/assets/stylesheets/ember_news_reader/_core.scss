@@ -1,9 +1,10 @@
+@import "archetype";
+
 // setup theme configs and styles
 @import "config";
 @import "primitives";
 
 // extend the archetype theme
-@import "archetype";
 //@import "../archetype/core";
 
 // import helper functions

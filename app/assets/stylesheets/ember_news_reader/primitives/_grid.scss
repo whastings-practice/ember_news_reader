@@ -1,0 +1,17 @@
+.container {
+  @include grid-canvas();
+}
+
+.row {
+  @include grid-row();
+}
+
+.sidebar-main {
+  @include grid(1/3, $first: true);
+  @include styleguide(container);
+}
+
+.content-main {
+  @include grid(2/3);
+  @include styleguide(container);
+}

@@ -1,14 +1,16 @@
 <div class="container">
-  <div class="sidebar-main">
-    <ul>
-      {{#each}}
-        <li>
-          {{#link-to 'feed' this}}{{title}}{{/link-to}}
-        </li>
-      {{/each}}
-    </ul>
-  </div>
-  <div class="content-main">
-    {{outlet}}
+  <div class="row">
+    <div class="sidebar-main">
+      <ul>
+        {{#each}}
+          <li>
+            {{#link-to 'feed' this}}{{title}}{{/link-to}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="content-main">
+      {{outlet}}
+    </div>
   </div>
 </div>
