@@ -3,7 +3,7 @@
   <ul>
     {{#each entry in entries}}
       <li>
-        {{#link-to 'entry' model entry}}{{entry.title}}{{/link-to}}
+        {{entry-preview feed=model entry=entry}}
       </li>
     {{/each}}
   </ul>
