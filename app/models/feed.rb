@@ -20,6 +20,11 @@ class Feed < ActiveRecord::Base
     feed
   end
 
+  def latest_entries
+    reload if updated_at < 30.seconds.ago
+    entries
+  end
+
   def reload
     # reloads entries
     self.touch #this causes the updated_at column to be updated

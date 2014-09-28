@@ -1,0 +1,10 @@
+<h1>You are reading {{title}}</h1>
+<div class="feed-entries">
+  <ul>
+    {{#each entry in entries}}
+      <li>
+        {{#link-to 'entry' model entry}}{{entry.title}}{{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+</div>
