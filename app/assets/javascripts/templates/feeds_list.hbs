@@ -1,0 +1,8 @@
+<ul class="feeds-list">
+  {{#each}}
+    <li>
+      {{#link-to 'feed' this}}{{title}}{{/link-to}}
+      <button {{action 'removeFeed' this}}>&times;</button>
+    </li>
+  {{/each}}
+</ul>

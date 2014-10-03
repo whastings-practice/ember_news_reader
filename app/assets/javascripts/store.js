@@ -1,4 +1,4 @@
-NewsReader.Store = DS.Store.extend({
+NewsReader.ApplicationStore = DS.Store.extend({
 
 });
 

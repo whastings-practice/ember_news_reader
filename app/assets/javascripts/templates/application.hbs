@@ -1,13 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="sidebar-main">
-      <ul>
-        {{#each}}
-          <li>
-            {{#link-to 'feed' this}}{{title}}{{/link-to}}
-          </li>
-        {{/each}}
-      </ul>
+      {{render 'feeds_list' model}}
+      {{render 'new_feed_form'}}
     </div>
     <div class="content-main">
       {{outlet}}

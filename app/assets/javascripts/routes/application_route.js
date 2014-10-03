@@ -1,5 +1,5 @@
 NewsReader.ApplicationRoute = Ember.Route.extend({
   model: function() {
-    return this.store.findAll('feed');
+    return this.store.find('feed');
   }
 });
