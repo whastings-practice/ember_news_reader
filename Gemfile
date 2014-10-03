@@ -20,7 +20,7 @@ group :development do
   gem 'binding_of_caller'
 end
 
-gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'rspec-rails'
